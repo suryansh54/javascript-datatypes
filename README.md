@@ -105,7 +105,22 @@ console.log(typeof undeclaredVariable);
 // expected output: "undefined";
 ```
 
+#### Additional Knowledge
+##### Difference Between Stack and the heap
+- Both Stack and Heap are stored in RAM.
+- Variable allocation is fast on stack where as on heap its slow.
+- Variables on stack go out of scope automatically once their need is done. That means de-allocation on stack is automatic. On heap, in regards to C and C++ we have to manually de-allocate where as high-level languages such as Java has garbage collection schemes.
+- On stack, we can access variables without the need for pointers and hence its fast and that is the reason it is used to store local data, method arguments and the call stack etc all that which needs less amount of memory.
+- You would use stack only when you know for sure how much memory for your data you would need even before compile time. On the other hand, we can use heap without us having to know for sure the amount of memory we need.
+
+Stack | Heap 
+--- | --- 
+Memory allocated from stack is called static memory allocation. | Memory allocated from Heap is called dynamic memory allocation.
+Stack is very fast access time's point of view. | Heap has slower access time than stack.
+Limited stack size is given to a program for its execution and it is OS-dependent. | Size of Heap is not limited to the program the way stack is. A program can allocate as much memory dynamically as needed until heap exhasted
+
 #### Reference:
 - https://www.w3schools.com/js/js_datatypes.asp
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
 - https://www.youtube.com/watch?v=9ooYYRLdg_g
+- https://www.quora.com/What-is-the-difference-between-the-stack-and-the-heap
