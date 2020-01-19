@@ -1,7 +1,7 @@
 # Javascript Datatypes
 JavaScript variables can hold many data types: numbers, strings, objects and more:
 
-**Primitive (Value Type)**
+**Primitive (Value Type)** Store in STACK
 - Number
 - Boolean
 - String
@@ -10,7 +10,7 @@ JavaScript variables can hold many data types: numbers, strings, objects and mor
 - Symbol
 - BigInt 
 
-**Non Primitive (Reference Type)**
+**Non Primitive (Reference Type)** Store in HEAP
 - Array
 - Object
 - Function
@@ -37,6 +37,43 @@ isPrimitive(true) // true
 isPrimitive(false) // true
 isPrimitive(undefined) // true
 isPrimitive(null) // true
+```
+
+#### More deep on the topic
+
+##### Primitive Example
+```javascript
+var name = 'Suryansh'
+console.log(name)
+
+var secondName = name;
+console.log(secondName)
+
+name = 'Anita'
+console.log(secondName)
+
+// Suryansh
+// Suryansh
+// Suryansh
+```
+
+##### Non Primitive Example
+```javascript
+var person = {
+    age: 28,
+    name: 'Suryansh',
+    hobbies: ['Coding', 'Dancing']
+}
+console.log(person)
+
+var secondPerson = person
+console.log(secondPerson)
+
+person.name = 'Ravish'
+console.log(secondPerson)
+// {age: 28, name: "Suryansh", hobbies: Array(2)}
+// {age: 28, name: "Suryansh", hobbies: Array(2)}
+// {age: 28, name: "Ravish", hobbies: Array(2)}
 ```
 
 ### Expressions - typeof
