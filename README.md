@@ -26,7 +26,7 @@ function isPrimitive(test) {
 isPrimitive([]) // false
 isPrimitive({}) // false
 isPrimitive(new Number(100)); // false
-console.log([] == []) // false
+console.log([] == []) // false (looks identical here it doesn't make it identical still two different objects two different places in the heap.)
 console.log([1] == [1]) // false
 console.log({} == {}) // false
 
