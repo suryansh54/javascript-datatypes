@@ -108,3 +108,4 @@ console.log(typeof undeclaredVariable);
 #### Reference:
 https://www.w3schools.com/js/js_datatypes.asp
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+https://www.youtube.com/watch?v=9ooYYRLdg_g
